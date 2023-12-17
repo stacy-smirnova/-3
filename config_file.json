@@ -1,0 +1,8 @@
+{
+    "queries": ["SELECT VendorID, COUNT(*) AS counts FROM data GROUP BY VendorID",
+                "SELECT passenger_count, AVG(trip_distance) AS avg_distance FROM data GROUP BY passenger_count",
+                "SELECT * FROM data WHERE trip_distance > 3",
+                "SELECT payment_type, AVG(tip_amount) AS avg_tip FROM data GROUP BY payment_type"],
+
+  "input_data_file": "nyc_yellow_tiny.csv"
+}
